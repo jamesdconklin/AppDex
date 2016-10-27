@@ -10,6 +10,12 @@ return(
     <p>Attack: {pokemonDetail.attack}</p>
     <p>Defense: {pokemonDetail.defense}</p>
     <p>Moveset: {pokemonDetail.moves.join(', ')}</p>
+    <h3>Toys</h3>
+    <ul>
+      {pokemonDetail.items.map((item) => (
+        <li key={item.id}><img src={item.image_url}/></li>
+      ))}
+    </ul>
   </section>
 );
 };

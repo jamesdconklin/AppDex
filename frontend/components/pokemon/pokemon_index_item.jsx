@@ -12,8 +12,9 @@ class PokemonIndexItem extends React.Component {
     return (
       <li className='dex-entry'
         onClick={this.handleClick}>
+        <span>{pokemon.id}</span>
         <img src={pokemon.image_url}/>
-        {pokemon.name}
+        <span>{pokemon.name}</span>
       </li>
     );
   }

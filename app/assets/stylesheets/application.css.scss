@@ -42,11 +42,32 @@ header {
 	}
 }
 
-.pokeDex{
+ul.dex-list {
+	width: 300px;
+	list-style: none;
+}
+
+section.poke-dex{
 	display: flex;
 	justify-content: space-between;
 }
 
-.dex-entry > img{
+li.dex-entry {
+
+	border-bottom: 1px solid $grey;
+	font-size: 16px;
+}
+
+li.dex-entry > img {
 	height: 20px;
 };
+
+.dex-entry > span {
+  
+}
+
+section.pokemon-detail{
+	background-color: white;
+	width: 100%;
+	text-align: center;
+}
