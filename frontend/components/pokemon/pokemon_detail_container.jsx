@@ -3,8 +3,8 @@ import PokemonDetail from './pokemon_detail';
 import {requestPokemonDetail} from '../../actions/pokemon_actions';
 
 const mapStateToProps = (state) => ({
-    pokemonDetail: state.pokemonDetail
-    // children: state.children;
+    pokemonDetail: state.pokemonDetail,
+    loading: state.loading
 });
 
 const mapDispatchToProps = (dispatch) => {

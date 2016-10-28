@@ -7,23 +7,26 @@ class PokemonIndex extends React.Component {
 
   }
 
-  // componentDidMount() {
-  //   this.props.requestAllPokemon();
-  // }
-
   render() {
-    var {pokemon} = this.props;
-    return (
-      <section className="poke-dex">
-        <ul className="dex-list">
-          {pokemon.map((poke) => <PokemonIndexItem key={poke.id} pokemon={poke}/> )}
-        </ul>
-        <section className="index-child-wrap">
-          {this.props.children}
+    var {pokemon, loading} = this.props;
+    let renderedContent = (<section className="poke-dex">
+      <img src="/assets/pokemon_spinner.gif"/>
+    </section>);
+
+    if (!loading) {
+      renderedContent = (
+        <section className="poke-dex">
+          <ul className="dex-list">
+            {pokemon.map((poke) => <PokemonIndexItem key={poke.id} pokemon={poke}/> )}
+          </ul>
+          <section className="index-child-wrap">
+            {this.props.children}
+          </section>
+          <div></div>
         </section>
-        <div></div>
-      </section>
-    );
+      );
+    }
+    return renderedContent;
   }
 
   //
