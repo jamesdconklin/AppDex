@@ -9,9 +9,7 @@ class PokemonIndex extends React.Component {
 
   render() {
     var {pokemon, loading, children} = this.props;
-    let spinner = (<section className="poke-dex">
-      <img src="/assets/pokemon_spinner.gif">
-    </section>);
+    let spinner = (<section className="loader"></section>);
 
     console.log(loading ? "SPIN GAT DANGIT" : "Proceed")
 
