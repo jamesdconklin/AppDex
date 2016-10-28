@@ -1,5 +1,6 @@
 class Api::PokemonController < ApplicationController
   def index
+    sleep 10
     @pokemon = Pokemon.all
     # render json: @pokemon
   end

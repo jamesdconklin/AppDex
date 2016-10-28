@@ -98,12 +98,17 @@ section.pokemon-detail{
 	background-color: #d1ccb6;
 	height: 100%;
 	text-align: center;
-	overflow: scroll;
+	overflow-y: scroll
 	// border: 40px solid $black;
 	// outline: 10px solid #d43316;
 
 }
 
+.index-child-wrap img {
+	width: 100%;
+	height: auto;
+	margin: 10px;
+}
 
 section.index-child-wrap{
 	width: calc(100vw - 320px);
@@ -138,6 +143,8 @@ section.form-container {
 	outline-width: 0;
 
 }
+
+
 
 .form-container form button{
 	background-color: #d43316;
