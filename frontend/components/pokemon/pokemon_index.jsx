@@ -18,7 +18,9 @@ class PokemonIndex extends React.Component {
         <ul className="dex-list">
           {pokemon.map((poke) => <PokemonIndexItem key={poke.id} pokemon={poke}/> )}
         </ul>
-        {this.props.children}
+        <section className="index-child-wrap">
+          {this.props.children}
+        </section>
         <div></div>
       </section>
     );

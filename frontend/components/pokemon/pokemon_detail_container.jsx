@@ -4,6 +4,7 @@ import {requestPokemonDetail} from '../../actions/pokemon_actions';
 
 const mapStateToProps = (state) => ({
     pokemonDetail: state.pokemonDetail
+    // children: state.children;
 });
 
 const mapDispatchToProps = (dispatch) => {
